@@ -1,0 +1,16 @@
+[package]
+name = "app"
+version = "0.1.0"
+description = "A Dummy app for caching Tauri"
+authors = ["..."]
+[[bin]]
+name = "app"
+path = "dummy.rs"
+
+[build-dependencies]
+tauri-build = { version = "1.2", features = ["isolation"] }
+
+[dependencies]
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
+tauri = { version = "1.2", features = ["api-all", "isolation", "windows7-compat"] }
