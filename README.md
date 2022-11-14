@@ -3,12 +3,14 @@
 This repo contain the docker images for:
 
   - Windows
-    - Choco
-    - Node
+    - Choco [Dockerfile](https://github.com/Apemill/tauri-docker/blob/main/windows/choco/Dockerfile)
+    - Node [Dockerfile](https://github.com/Apemill/tauri-docker/blob/main/windows/node/Dockerfile)
     - Tauri (Node + Rust + Tauri)
+      - MSVC [Dockerfile](https://github.com/Apemill/tauri-docker/blob/main/windows/tauri/Dockerfile)
+      - GNU [Dockerfile](https://github.com/Apemill/tauri-docker/blob/main/windows/tauri.gnu/Dockerfile)
     - Tauri-CPP (Tauri + CMake + CPP + Eigen) `WIP`
   - Linux `WIP`
-    - Tauri (Node + Rust + Tauri)
+    - Tauri (Node + Rust + Tauri) [Dockerfile](https://github.com/Apemill/tauri-docker/blob/main/linux/tauri/Dockerfile)
     - Tauri-CPP (Tauri + CMake + CPP + Eigen)
 
 > The docker image must be created manually and pushed on dockerhub:
